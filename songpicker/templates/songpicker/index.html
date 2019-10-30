@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Metallica</title>
+
+    <link rel="stylesheet" href="{% static 'songpicker/indexStyle.css' %}" type="text/css"/>
+
+</head>
+<body>
+
+<div id="container">
+
+    <div id="logoContainer">
+        Metallica random song
+
+    </div>
+
+    <div>
+
+        <a href="{% url 'pick' %}">
+            <input type="submit" value="Pick" id="pick"/>
+        </a>
+    </div>
+
+
+    <div id="quoteContainer">
+        Cannot the kingdom of salvation take me home? <br>
+        -Cliff Burton
+    </div>
+
+</div>
+
+<div id="footer">
+    Metallica Songs &copy;
+</div>
+
+
+</body>
+</html>
