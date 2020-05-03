@@ -12,21 +12,20 @@
 <div id="container">
 
     <div id="songTitle">
-        {{ song.song_name }}
-
+        {{ song.name }}
     </div>
     <div id="songAlbum">
-
         {{ song.album }}
     </div>
-    <iframe width="700" height="500" src="{{ embed }}" frameborder="0"
+
+    <iframe width="700" height="525" src="{{ embed_url }}" frameborder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
     <p><a href="/metallica/"><input type="submit" value="back" id="backButton"></a></p>
 
 </div>
 <div id="footer">
     Metallica Songs &copy;
-
 </div>
 
 </body>
