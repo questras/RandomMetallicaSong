@@ -7,36 +7,34 @@
     <title>Metallica</title>
 
     <link rel="stylesheet" href="{% static 'songpicker/indexStyle.css' %}" type="text/css"/>
-
 </head>
 <body>
 
 <div id="container">
-
     <div id="logoContainer">
         Metallica random song
-
     </div>
-
     <div>
-
         <a href="{% url 'pick' %}">
             <input type="submit" value="Pick" id="pick"/>
         </a>
     </div>
-
-
+    <br>
+    <br>
+    <div>
+        <a id="listLink" href="{% url 'song_list_view' %}">
+            or go to list of all songs.
+        </a>
+    </div>
     <div id="quoteContainer">
         Cannot the kingdom of salvation take me home? <br>
         -Cliff Burton
     </div>
-
 </div>
 
 <div id="footer">
     Metallica Songs &copy;
 </div>
-
 
 </body>
 </html>

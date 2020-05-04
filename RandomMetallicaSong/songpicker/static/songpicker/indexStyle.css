@@ -55,4 +55,62 @@ body {
 
 a {
     text-decoration: none;
+    color: gray;
+}
+
+a:hover {
+    color: white;
+}
+
+#listLink {
+    text-decoration: none;
+    color: gray;
+    padding-top: 10px;
+    font-size: large;
+}
+
+#listLink:hover {
+    color: white;
+}
+
+table, th, td {
+    border: 1px solid gray;
+    padding: 5px;
+}
+
+th {
+    font-size: 32px;
+}
+
+td {
+    font-size: 24px;
+}
+
+#songList {
+    align-content: center;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+#backButton {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 100px;
+    height: 48px;
+    float: left;
+
+    background-color: gray;
+    border: none;
+    font-size: 18px;
+    letter-spacing: 3px;
+    border-radius: 50px;
+
+    -webkit-box-shadow: 0px 0px 30px 0px rgba(219, 219, 219, 1);
+    -moz-box-shadow: 0px 0px 30px 0px rgba(219, 219, 219, 1);
+    box-shadow: 0px 0px 30px 0px rgba(219, 219, 219, 1);
+    cursor: pointer;
+}
+
+#backButton:hover {
+    background-color: #F8F8FF;
 }

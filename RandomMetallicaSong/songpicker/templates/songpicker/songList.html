@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Metallica</title>
+
+    <link rel="stylesheet" href="{% static 'songpicker/indexStyle.css' %}" type="text/css"/>
+</head>
+<body>
+
+<div id="container">
+    <a href="{% url 'index' %}"><input type="submit" value="back" id="backButton"></a>
+    <table id="songList">
+      <tr>
+        <th>Song</th>
+        <th>Album</th>
+      </tr>
+        {% for song in songs %}
+            <tr>
+                <td><a target="_blank" href="{% url 'song_view' song.pk %}">{{ song.name }}</a></td>
+                <td>{{ song.album }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+</div>
+
+<div id="footer">
+    Metallica Songs &copy;
+</div>
+
+</body>
+</html>

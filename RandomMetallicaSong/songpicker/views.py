@@ -50,3 +50,14 @@ def pick(request):
     random_song = random.choice(songs)
 
     return redirect(reverse('song_view', kwargs={'song_id': random_song.pk}))
+
+
+def song_list_view(request):
+    """
+    View with all songs listed.
+    """
+    songs = Song.objects.all().order_by('album')
+    context = {
+        'songs': songs,
+    }
+    return render(request, 'songpicker/songList.html', context=context)
