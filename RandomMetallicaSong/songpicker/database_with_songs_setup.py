@@ -13,7 +13,5 @@ def setup():
     """
     songs_list = get_songs_list()
     for idx, (name, album) in enumerate(songs_list):
-        print(f'Creating Song: {name} {album}')
         obj = Song(name=name, album=album)
         obj.save()
-        print(f'Song created.')
