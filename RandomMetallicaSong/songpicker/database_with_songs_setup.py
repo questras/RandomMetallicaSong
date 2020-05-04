@@ -6,7 +6,7 @@ from .models import Song
 from .songs_scraper import get_songs_list
 
 
-def setup():
+def setup_database_with_songs():
     """
     Add all Metallica songs from [get_songs_list] to database.
     :return:
