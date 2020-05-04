@@ -5,6 +5,7 @@ and get list of songs and corresponding albums.
 
 import pandas as pd
 
+
 def get_songs_list():
     """
     Scrape wikipedia page with all Metallica songs and
